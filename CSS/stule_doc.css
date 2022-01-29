@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Open Sans'; 
+	src: url(../fonts/opensans.woff2); 
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url(../fonts/opensanslight.woff2); 
+}
+
+@font-face {
+    font-family: 'Open Sans Semi Bold';
+    src: url(../fonts/opensanssemibold.woff2); 
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url(../fonts/opensansbold.woff2); 
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 16pt;
+    background-color: #f9f9f9;
+    color: #202020;
+    letter-spacing: 2px;
+  }
+
+h1, h2, h3 {
+    font-family: 'Open Sans Bold';
+}
+
+h4 {
+    font-family: 'Open Sans Semi Bold';
+}
+
+b {
+    font-family: 'Open Sans Semi Bold';
+}
+
+li {
+    font-family: 'Open Sans Light';
+    font-size: 14pt;
+}
+
+p {
+   border:0.3px #202020  solid;
+   padding: 15px;
+}
+
+img {
+    width:500px;
+}

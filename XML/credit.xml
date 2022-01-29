@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <object class="GtkApplicationWindow" id="windowCredit">
+        <property name="title">s21_credit</property>
+        <property name="resizable">FALSE</property>
+        <property name="name">windowCredit</property>
+        <child>
+            <object class="GtkBox" id="boxCredit">
+                <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+                <property name="spacing">15</property>
+                <child>
+                    <object class="GtkGrid" id="gridCredit">
+                        <property name="row-spacing">15</property>
+                        <property name="column-spacing">15</property>
+                        <child>
+                            <object class="GtkLabel" id="AmountOfCreditLabel:">
+                                <property name="label">Amount of credit, RUB:</property>
+                                <property name="height-request">48</property>
+                                <property name="xalign">0</property>
+                                <property name="name">labelCredit</property>
+                                <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">0</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkText" id="AmountOfCreditText">
+                                <property name="name">enterCredit</property>
+                                <property name="max-length">9</property>
+                                <property name="placeholder-text">Ø</property>
+                                <layout>
+                                    <property name="column">1</property>
+                                    <property name="row">0</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkLabel" id="CredittermLabel">
+                                <property name="label">Credit term:</property>
+                                <property name="xalign">0</property>
+                                <property name="name">labelCredit</property>
+                                <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">1</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkText" id="CredittermText">
+                                <property name="name">enterCredit</property>
+                                <property name="max-length">3</property>
+                                <property name="placeholder-text">Ø</property>
+                                <layout>
+                                    <property name="column">1</property>
+                                    <property name="row">1</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkComboBoxText" id="creditComboBox">
+                                <property name="active-id">month</property>
+                                <items>
+                                    <item translatable="yes" id="month">month</item>
+                                    <item translatable="yes" id="year">year</item>
+                                </items>
+                                <layout>
+                                    <property name="column">2</property>
+                                    <property name="row">1</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkLabel" id="InterestRateLabel">
+                                <property name="label">Interest rate, %:</property>
+                                <property name="height-request">48</property>
+                                <property name="xalign">0</property>
+                                <property name="name">labelCredit</property>
+                                <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">2</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkText" id="InterestRateText">
+                                <property name="name">enterCredit</property>
+                                <property name="max-length">9</property>
+                                <property name="placeholder-text">Ø</property>
+                                <layout>
+                                    <property name="column">1</property>
+                                    <property name="row">2</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkCheckButton" id="AnnuityCreditCheckButton">
+                                <property name="label">Annuity payment</property>
+                                <property name="group">DifferentiatedCreditCheckButton</property>
+                                <property name="active">True</property>
+                                <property name="name">labelCredit</property>
+                                <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">3</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkCheckButton" id="DifferentiatedCreditCheckButton">
+                                <property name="label">Differentiated payment</property>
+                                <property name="name">labelCredit</property>
+                                <layout>
+                                    <property name="column">1</property>
+                                    <property name="row">3</property>
+                                </layout>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonResult">
+                        <property name="label">Result</property>
+                        <property name="name">buttonResult</property>
+                        <signal name="clicked" handler="print_result_credit"></signal>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkGrid" id="gridAnswer">
+                        <property name="row-spacing">15</property>
+                        <property name="column-spacing">15</property>
+                        <child>
+                            <object class="GtkLabel" id="MonthlyPaymentAmountLabel">
+                                <property name="label">Monthly payment amount, RUB:</property>
+                                <property name="height-request">48</property>
+                                <property name="xalign">0</property>
+                                <property name="name">labelCredit</property>
+                                <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">1</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkText" id="MonthlyPaymentAmountText">
+                                <property name="name">enterCredit</property>
+                                <property name="editable">FALSE</property>
+                                <layout>
+                                    <property name="column">1</property>
+                                    <property name="row">1</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkLabel" id="OverpaymentOnCreditLabel">
+                                <property name="label">Overpayment on credit, RUB:</property>
+                                <property name="height-request">48</property>
+                                <property name="xalign">0</property>
+                                <property name="name">labelCredit</property>
+                                <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">2</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkText" id="OverpaymentOnCreditText">
+                                <property name="name">enterCredit</property>
+                                <property name="width-request">270</property>
+                                <property name="editable">FALSE</property>
+                                <layout>
+                                    <property name="column">1</property>
+                                    <property name="row">2</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkLabel" id="TotalPaymentLabel">
+                                <property name="label">Total payment, RUB:</property>
+                                <property name="height-request">48</property>
+                                <property name="xalign">0</property>
+                                <property name="name">labelCredit</property>
+                                <layout>
+                                    <property name="column">0</property>
+                                    <property name="row">3</property>
+                                </layout>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkText" id="TotalPaymentText">
+                                <property name="name">enterCredit</property>
+                                <property name="editable">FALSE</property>
+                                <layout>
+                                    <property name="column">1</property>
+                                    <property name="row">3</property>
+                                </layout>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>

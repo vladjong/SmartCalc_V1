@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <object class="GtkWindow" id="windowPlot">
+        <property name="title">s21_plot</property>
+        <property name="modal">TRUE</property>
+        <property name="resizable">FALSE</property>
+        <property name="default-height">300</property>
+        <property name="default-width">800</property>
+        <child>
+            <object class="GtkOverlay" id="overlay">
+                <child>
+                    <object class="GtkDrawingArea" id="area"></object>
+                </child>
+                <child>
+                    <object class="GtkGrid" id="gridPlot">
+                        <child>
+                            <object class="GtkButton" id="buttonPlus">
+                                <property name="label">+</property>
+                                <property name="name">buttonPlot</property>
+                                <signal name="clicked" handler="scale_up" object="area"></signal>
+                            </object>
+                        </child>
+                        <child>
+                            <object class="GtkButton" id="buttonMinus">
+                                <property name="label">-</property>
+                                <property name="name">buttonPlot</property>
+                                <signal name="clicked" handler="scale_down" object="area"></signal>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>

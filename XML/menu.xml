@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <menu id="menubar">
+        <submenu>
+            <attribute name="label">File</attribute>
+            <section>
+                <item>
+                    <attribute name="label">Calculator</attribute>
+                    <attribute name="action">app.calculator</attribute>
+                </item>
+                <item>
+                    <attribute name="label">Credit</attribute>
+                    <attribute name="action">app.credit</attribute>
+                </item>
+                <item>
+                    <attribute name="label">Exit</attribute>
+                    <attribute name="action">app.exit</attribute>
+                </item>
+            </section>
+        </submenu>
+    </menu>
+</interface>

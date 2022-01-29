@@ -1,0 +1,100 @@
+window {
+    background-color: #686873;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+button {
+    font-family : Open Sans;
+    border-radius: 0px;
+    background-image: none;
+    background-color: #80808C;
+    padding: 10px 32px;
+    font-size: 16px;
+    color: #FCFAFF;
+    border-color: #686873;
+}
+
+button:hover {
+    background-image: none;
+    background-color: #8D8DE8;
+}
+
+#buttonEqual:hover {
+    background-image: none;
+    background-color: #8D8DE8;
+}
+
+#buttonNumber:hover {
+    background-image: none;
+    background-color: #8D8DE8;
+}
+
+#buttonNumber {
+    background-color: #A0A0B0;
+}
+
+#buttonEqual {
+    background-color: #6667AB;
+}
+
+#buttonPlot {
+    opacity: .8;
+    padding: 10px 20px;
+    margin: 5px 5px;
+    border-color: #6667AB;
+    background-color: #6667AB;
+}
+
+#buttonPlot:hover {
+    background-image: none;
+    background-color: #8D8DE8;
+}
+
+#windowCredit {
+    padding: 15px;
+    background-color: #80808C;
+}
+
+#buttonResult {
+    font-family : Open Sans;
+    opacity: .8;
+    border: none;
+    font-size: 16px;
+    background-color: #686873;
+    border-radius: 4px;
+}
+
+#creditComboBox {
+    font-family : Open Sans;
+    opacity: .8;
+    border: none;
+    font-size: 16px;
+    background-color: #6667AB;
+    border-radius: 4px;
+}
+
+#buttonResult:hover {
+    background-image: none;
+    background-color: #8D8DE8;
+}
+
+#labelCredit {
+    font-family : Open Sans;
+    font-size: 16px;
+    color: #FCFAFF;
+}
+
+#enterCredit {
+    font-family : Open Sans;
+    font-size: 20px;
+    background-color: #686873;
+    padding-left: 10px;
+    border-radius: 4px;
+    color: #FCFAFF;
+}
+
+text {
+    font-family : Open Sans;
+    font-size: 30px;
+    color: #FCFAFF;
+}

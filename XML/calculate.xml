@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <object class="GtkApplicationWindow" id="win">
+        <property name="title">s21_calculator</property>
+        <property name="resizable">FALSE</property>
+        <child>
+            <object class="GtkGrid" id="grid">
+                <child>
+                    <object class="GtkText" id="text">
+                        <property name="margin-top">25</property>
+                        <property name="editable">FALSE</property>
+                        <property name="max-length">30</property>
+                        <layout>
+                            <property name="column">0</property>
+                            <property name="row">0</property>
+                            <property name="column-span">7</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonX">
+                        <property name="label">x</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">0</property>
+                            <property name="row">1</property>
+                            <property name="column-span">3</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button(">
+                        <property name="label">(</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">3</property>
+                            <property name="row">1</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button)">
+                        <property name="label">)</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">4</property>
+                            <property name="row">1</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonMod">
+                        <property name="label">mod</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">5</property>
+                            <property name="row">1</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonAC">
+                        <property name="label">AC</property>
+                        <signal name="clicked" handler="clean_result" object="text"></signal>
+                        <layout>
+                            <property name="column">6</property>
+                            <property name="row">1</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonE">
+                        <property name="label">e</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">0</property>
+                            <property name="row">2</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonPi">
+                        <property name="label">π</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">1</property>
+                            <property name="row">2</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonSqrt">
+                        <property name="label">√</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">2</property>
+                            <property name="row">2</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber7">
+                        <property name="label">7</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">3</property>
+                            <property name="row">2</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber8">
+                        <property name="label">8</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">4</property>
+                            <property name="row">2</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber9">
+                        <property name="label">9</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">5</property>
+                            <property name="row">2</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonDiv">
+                        <property name="label">÷</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">6</property>
+                            <property name="row">2</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonAsin">
+                        <property name="label">asin</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">0</property>
+                            <property name="row">3</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonSin">
+                        <property name="label">sin</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">1</property>
+                            <property name="row">3</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonPow">
+                        <property name="label">^</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">2</property>
+                            <property name="row">3</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber4">
+                        <property name="label">4</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">3</property>
+                            <property name="row">3</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber5">
+                        <property name="label">5</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">4</property>
+                            <property name="row">3</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber6">
+                        <property name="label">6</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">5</property>
+                            <property name="row">3</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonMult">
+                        <property name="label">×</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">6</property>
+                            <property name="row">3</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonAcos">
+                        <property name="label">acos</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">0</property>
+                            <property name="row">4</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonCos">
+                        <property name="label">cos</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">1</property>
+                            <property name="row">4</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonLn">
+                        <property name="label">ln</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">2</property>
+                            <property name="row">4</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber1">
+                        <property name="label">1</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">3</property>
+                            <property name="row">4</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber2">
+                        <property name="label">2</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">4</property>
+                            <property name="row">4</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber3">
+                        <property name="label">3</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">5</property>
+                            <property name="row">4</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonMinus">
+                        <property name="label">-</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">6</property>
+                            <property name="row">4</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonAtan">
+                        <property name="label">atan</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">0</property>
+                            <property name="row">5</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonTan">
+                        <property name="label">tan</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">1</property>
+                            <property name="row">5</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonLog">
+                        <property name="label">log</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">2</property>
+                            <property name="row">5</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumber0">
+                        <property name="label">0</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">3</property>
+                            <property name="row">5</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonNumberSign">
+                        <property name="label">.</property>
+                        <property name="name">buttonNumber</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">4</property>
+                            <property name="row">5</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonEqual">
+                        <property name="name">buttonEqual</property>
+                        <property name="label">=</property>
+                        <signal name="clicked" handler="print_result" object="text"></signal>
+                        <layout>
+                            <property name="column">5</property>
+                            <property name="row">5</property>
+                        </layout>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="buttonPlus">
+                        <property name="label">+</property>
+                        <signal name="clicked" handler="print_text" object="text"></signal>
+                        <layout>
+                            <property name="column">6</property>
+                            <property name="row">5</property>
+                        </layout>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>
