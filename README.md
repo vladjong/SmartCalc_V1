@@ -1,3 +1,5 @@
+![matrix](images/s21_calculator.png)
+
 # SmartCalc_V1
 ## **LET'S GO!**
 **SMARTCALC\_V1.0** - this is a convenient utility, which consists of two blocks, will help you calculate your any expressions and calculate the interest on the loan
