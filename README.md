@@ -1,4 +1,4 @@
-![matrix](images/s21_calculator.png)
+![s21_calculator](images/s21_calculator.png)
 
 # SmartCalc_V1
 ## **LET'S GO!**
