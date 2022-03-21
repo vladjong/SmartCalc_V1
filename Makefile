@@ -1,6 +1,5 @@
 CC = gcc
 GCOV = -fprofile-arcs -ftest-coverage
-PREFIX = /Users/adough/C7_SmartCalc_v1.0-0/src/app
 TARGET = SmartCalc
 GTK4_PASS = `pkg-config --cflags --libs gtk4-macos` -I/.brew/include -L/.brew/Cellar/gtk4/4.4.1/lib
 
