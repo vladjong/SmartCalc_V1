@@ -17,12 +17,22 @@ calculate.o: calculate.c
 credit_work.o: credit_work.c
 	gcc -c -o credit_work.o credit_work.c
 
-install:
-	mkdir app
-	install $(TARGET) $(PREFIX)
+install: GUI
+	mkdir -p ../SmartCalc
+	mkdir -p ~/models
+	mkdir -p ~/XML
+	mkdir -p ~/CSS
+	install ./SmartCalc ../SmartCalc
+	install ./XML/calculate.xml ~/gui
+	install ./XML/credit.xml ~/gui
+	install ./XML/menu.xml ~/gui
+	install ./XML/plot.xml ~/gui
+	install ./CSS/stule.css ~/gui
 
 uninstall:
-	rm -rf $(PREFIX)
+	rm -rf ../SmartCalc
+	rm -rf ~/XML
+	rm -rf ~/CSS
 
 dvi:
 	open s21_documentation.html
