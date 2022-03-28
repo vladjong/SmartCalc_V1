@@ -1,4 +1,4 @@
-![s21_calculator](images/s21_calculator.png)
+![s21_calculator](images/smartCalc_V1.png)
 
 # SmartCalc_V1
 ## **LET'S GO!**
